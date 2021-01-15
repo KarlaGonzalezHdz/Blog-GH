@@ -1,57 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog GH</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300&family=Raleway:wght@100&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;300&family=Raleway:wght@100&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo RUTA; ?>css/estilos.css">
-</head>
-
-<body>
-    <header>
-        <div class="contenedor">
-
-            <div class="logo izquierda">
-                <p><a href="#">Blog - GH</a></p>
-            </div>
-
-            <div class="derecha">
-
-                <form name="busqueda" class="buscar" action="<?php echo RUTA; ?>/buscar.php" method="GET">
-                    <input type="text" name="busqueda" placeholder="Buscar">
-                    <button type="submit" class="icono fa fa-search"></button>
-                </form>
-
-                <nav class="menu">
-                    <ul>
-                        <li>
-                            <a href=""><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="">Contacto<i class=" icono fa fa-envelope"></i></a>
-                        </li>
-                    </ul>
-                </nav>
-
-            </div>
+<?php require 'header.php';?>
 
 
+    <div class="contenedor">
+        <div class="post">
+            <article>
+                <h2 class="Titulo">Titulo del articulo</h2>
+                <p class="fecha">1 de enero del 2016</p>
+                <div class="thumb">
+                    <a href="#">
+                        <img src="<?php echo RUTA;?>/imagenes/1.png" alt="">
+                    </a>
+                    <p class="extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="continuar">Continuar leyendo</a>
+                </div>
+            </article>
         </div>
 
-    </header>
+        <div class="post">
+            <article>
+                <h2 class="Titulo">Titulo del articulo</h2>
+                <p class="fecha">1 de enero del 2016</p>
+                <div class="thumb">
+                    <a href="#">
+                        <img src="<?php echo RUTA; ?>/imagenes/2.png" alt="">
+                    </a>
+                    <p class="extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="continuar">Continuar leyendo</a>
+                </div>
+            </article>
+        </div>
 
-</body>
 
-</html>
+        <?php require 'paginacion.php' ;?>
+    </div>
+
