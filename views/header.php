@@ -21,7 +21,7 @@
         <div class="contenedor">
 
             <div class="logo izquierda">
-                <p><a href="#">Blog - GH</a></p>
+                <p><a href="<?php echo RUTA;?>">Blog - GH</a></p>
             </div>
 
             <div class="derecha">
